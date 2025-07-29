@@ -113,7 +113,8 @@ Users are redirected to the gateway during payment. Upon success, the seat is co
 
 ## 📜 License
 
-This project is built as a part of the academic curriculum. You may modify or use it for learning or academic purposes. Commercial use is not allowed without permission.
+This project is strictly for **experience and idea reference only**.  
+**Do not use** it for academic submission, commercial deployment, or any real-world application.
 
 ---
 
@@ -126,5 +127,5 @@ Founder – RN Bus Yatayat Pvt. Ltd.
 
 ---
 
-> Thank you for checking out this project! If you like it, consider starring the repo or contributing improvements.
+> Thank you for checking out this project! If you like it, consider starring the repo or using it for inspiration only.
 
