@@ -1,0 +1,13 @@
+eSewa ID:
+9806800001/2/3/4/5
+Password: Nepal@123 
+MPIN: 1122 
+Token:123456
+
+Khalti ID:
+9800000000/1/2/3/4/5
+MPIN: 1111
+OTP: 987654
+
+php.ini
+extension=gd

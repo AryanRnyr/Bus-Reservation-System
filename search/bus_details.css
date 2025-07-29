@@ -1,0 +1,650 @@
+.dep-suggestions-list {
+
+    position: absolute;
+    top: 100%; /* Aligns the dropdown right below the input field */
+    left: 0;
+    width: 100%; /* Full width of the input */
+    /* border: 1px solid #ccc; */
+    max-height: 130px;
+    overflow-y: auto;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 2.5px;
+    }
+    .dep-suggestions-list div {
+    padding: 2px;
+    padding-left: 5px;
+    cursor: pointer;
+    background-color: #007ab8;
+    border: 1px solid #ccc;
+    color: white;
+    margin:4px;
+    border-radius: 5px;
+    text-align: left;
+    }
+    .dep-suggestions-list div:hover {
+    background-color: #01608f;
+    }
+    
+    
+    .arr-suggestions-list {
+    
+    position: absolute;
+    top: 100%; /* Aligns the dropdown right below the input field */
+    left: 0;
+    width: 100%; /* Full width of the input */
+    /* border: 1px solid #ccc; */
+    max-height: 130px;
+    overflow-y: auto;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 2.5px;
+    }
+    .arr-suggestions-list div {
+    padding: 2px;
+    padding-left: 5px;
+    cursor: pointer;
+    background-color: #007ab8;
+    border: 1px solid #ccc;
+    color: white;
+    margin:4px;
+    border-radius: 5px;
+    text-align: left;
+    }
+    .arr-suggestions-list div:hover {
+        background-color: #01608f;
+    }
+    
+            .emptyresults{
+        text-align: center;
+        border:1px solid black;
+        margin-top: 15px;
+        margin-left:10px;
+        margin-right: 10px;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        border-radius: .25rem;
+        padding: .75rem 1.25rem;
+        color: #343a40 !important;
+    } 
+    
+    .bus-result {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #ddd;
+        margin-top: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        box-shadow: 5px 5px 5px rgb(209, 209, 209);
+        
+    }
+    
+    .bus-details {
+        flex: 1;
+    }
+    
+    .time-location {
+        flex: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .departure, .arrival {
+        text-align: center;
+    }
+    
+    .duration {
+        /* font-weight: bold; */
+        text-align: center;
+    }
+    
+    .time {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    .location {
+        font-size: 1em;
+        color: gray;
+    }
+    
+    .seats {
+        flex: 1;
+        text-align: center;
+    }
+    
+    
+    
+    .bus_details{
+        /* background-color: rgb(235, 235, 235); */
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    
+    .seat-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        width: max-content;
+        border-radius: 0.25rem;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: center;
+        height: 42px;
+    }
+    
+    .row-driver{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 7px;
+    }
+    
+    .seat {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        text-align: center;
+        line-height: 30px;
+        /* background-color: #f0f0f0; */
+        background-color: #007ab8;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .seat-gap {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        line-height: 40px;
+    }
+
+    .seat-gap1 {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        margin-left: 2px;
+        line-height: 40px;
+        border-left: 2px solid black;
+    }
+    
+    #seat-43 {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        margin-left:10px;
+        margin-right:10px;
+        line-height: 30px;
+    }
+    
+    
+    .seat:hover {
+        /* background-color: #007ab8;
+        color: white; */
+        background-color: #004364;
+        color: white;
+    }
+    
+    .seat.selected {
+        /* background-color: #01608f; */
+        background-color: #fda219;
+            color: white;
+    }
+    
+    .seat.booked {
+        background-color: grey;
+        cursor: not-allowed;
+    }
+    
+    
+    .driver {
+        width: 60px;
+        height: 60px;
+        /* background-color: #007ab8; */
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 60px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .driver img{
+        height: 35px;
+    }
+    
+    
+    /* both at same line */
+    .bus_details, .usr_details {
+        width: 48%; /* Adjust the width of each container (bus seat layout and form) */
+        padding: 10px;
+    }
+    
+    .container {
+        display: flex; /* Enables Flexbox */
+        justify-content: space-between; /* Space between the two elements */
+        align-items: flex-start; /* Aligns items to the top of the container */
+        
+        background-color: rgb(235, 235, 235);
+    }
+    
+    .bus_details {
+        flex: 1; /* Flexibly occupies remaining space */
+        margin-right: 2%; /* Adds a little space between the bus layout and the form */
+        display: flex; /* Enables Flexbox */
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        height: 100%; /* Ensures that the parent div has a height to center vertically */
+    }
+    
+    .seat_layout {
+        width: 80%; /* Adjust this value based on your desired width for the seat layout */
+        max-width: 600px; /* Optional: Set a max-width for the seat layout */
+        padding: 10px;
+    }
+    
+    .usr_details {
+        flex: 1; /* Flexibly occupies remaining space */
+        margin-left: 2%; /* Adds space on the left side of the form */
+        margin-top: 30px;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Stacks the elements vertically on smaller screens */
+            align-items: center; /* Centers items on smaller screens */
+        }
+    
+        .bus_details, .usr_details {
+            width: 100%; /* Full width on smaller screens */
+            margin: 0; /* Remove margins when stacked */
+        }
+    }
+    
+    #selected_seats {
+        border: 0.5px solid grey;
+        outline: none; /* Removes the outline that appears on focus */
+        background: none; /* Optional: Removes the background if needed */
+        padding: 5px; /* Optional: Adjust padding if needed */
+        font-size: 16px; /* Optional: Adjust font size if needed */
+        font-weight: bold;
+        cursor: default;
+    }
+    #total_fare {
+        border: 0.5px solid grey;
+        outline: none; /* Removes the outline that appears on focus */
+        background: none; /* Optional: Removes the background if needed */
+        padding: 5px; /* Optional: Adjust padding if needed */
+        font-size: 16px; /* Optional: Adjust font size if needed */
+        font-weight: bold;
+        cursor: default;
+    }
+    
+    /* Style for the color index */
+    .color-index {
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: left; /* Center the text */
+    }
+    
+    /* Style for the color dots */
+    .color-index span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        border-radius: 5%; /* Make the dots round */
+    }
+    
+    /* Colors for the different statuses */
+    .color-index .grey {
+        background-color: grey; /* Booked seats color */
+    }
+    
+    .color-index .blue {
+        background-color: #007ab8;; /* Available seats color */
+    }
+    
+    .color-index .orange {
+        background-color: #fda219;; /* Selected seats color */
+    }
+
+    .seatlay{
+        font-size: 16px;
+    }
+
+    /* General Hamburger Styles */
+.hamburger {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    body{
+        min-width: 100%;
+        height: 100%;
+    }
+    header{
+        min-width: 100%;
+    }
+    .navbar{
+        min-width: 100%;
+    }
+    
+    .hamburger {
+        display: block; /* Visible only on smaller screens */
+    }
+    
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background: #f8f8f8;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+    }
+    
+    .nav-links.active {
+        display: flex; /* Display menu when active */
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .navbar li:nth-child(5) {
+        margin-left: 15px;
+    }
+    
+    .login-btn {
+        background: #ffc162;
+        color: white;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+    }
+    
+    .search-section {
+        background: -webkit-linear-gradient(-45deg, #048fc6 0%, #0e3670 40%, #0b1652 100%);
+        color: white;
+        text-align: center;
+        /* width: 768px; */
+        padding: 2rem 0;
+        /* margin-top: 80px;  */
+    }
+    h1{
+        width:70%;
+        margin: 0 auto;
+    }
+    hr{
+        border-color: rgb(168, 168, 168);
+        width:50%;
+        margin:0 auto;
+        opacity: 20%;
+    }
+    
+    .date{
+        font-family: inherit;
+    }
+    
+    .search-form {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 0.8rem;             /* Adjust gap between elements */
+        margin: 0 auto;       
+        width: 100%;           
+        max-width: 100%;      
+    }
+    
+    .search-form input,
+    .search-form select,
+    .search-form button {
+        padding: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    .sourcediv {
+        padding: 0rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;  /* Make inputs and button full width */
+        max-width: 60%; 
+        position: relative; 
+        display: inline-block; 
+    
+    }
+    .arrivaldiv {
+        padding: 0rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;  /* Make inputs and button full width */
+        max-width: 60%; 
+    
+    }
+    .date {
+        padding: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin: 0;
+        width: 60%;  /* Make inputs and button full width */
+        max-width: 60%; 
+    
+    }
+    
+    .search-form button {
+        background: #0288d1;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .search-form button:hover {
+        background: #01579b;
+    }
+    
+    .available-buses {
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    
+    .bus-gallery {
+        display: flex;           
+        /* overflow-x: auto;             */
+        gap: 2rem;       
+        justify-content: center;   
+        margin-top: 1rem;  
+        
+        overflow: hidden;                
+        cursor: grab;  
+        background-color: rgb(202, 201, 201);
+        padding: 10px;
+    }
+    
+    .bus-gallery img {
+        width: 300px;               
+        height: auto;               
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);    
+        user-select: none; /* Prevent text/image selection */
+        pointer-events: none; /* Disable default pointer events on images */       
+    }
+    
+    
+    /* Styling for the news carousel */
+    .carousel-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        flex: 0 0 50%;  /* Show 3 items in the carousel at a time */
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin: 10px;
+        border-radius: 8px;
+    }
+    
+    .news-item {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+    
+    .header-news {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .date-news {
+        font-size: 12px;
+        color: gray;
+        margin-top: 5px;
+    }
+    
+    .content-news {
+        font-size: 14px;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    
+    /* Styling for the carousel control buttons */
+    .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .carousel-control.left {
+        left: 10px;
+    }
+    
+    .carousel-control.right {
+        right: 10px;
+    }
+    
+    .carousel-control:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    h4{
+        text-align: center;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    
+    /* Footer Styling */
+    .footer {
+        background-color: #1E1C26;  /* Dark background */
+        color: white;            /* White text */
+        text-align: center;      /* Center align text */
+        padding: 50px 0;         /* Padding to add some space */
+        font-size: 16px;         /* Adjust font size */
+        width: 100%;             /* Make it span the full width */
+        position: relative;      /* Normal flow position */
+        margin-top: 40px;        /* Ensures space between footer and content above */
+    }
+    
+    footer p {
+        margin: 0;               /* Remove margin */
+    }
+    
+    .mylink{
+        text-decoration: none;
+        color: #039be5;
+    }
+
+    h3{
+        text-align: center;
+    }
+    
+    .bus-result {
+        flex-direction: column;  /* Stack items vertically on mobile */
+        padding: 10px;  /* Reduced padding for mobile */
+    }
+
+    .bus-details, .time-location, .seats {
+        width: 100%;  /* Ensure sections take full width */
+        margin-bottom: 10px;  /* Add spacing between sections */
+        display: block;
+    }
+
+    .time-location {
+        justify-content: space-between;
+    }
+
+    .departure, .arrival {
+        margin-bottom: 0;  /* Remove unnecessary margin */
+    }
+
+    .view-seats {
+        width: 100%;  /* Make the button full width on mobile */
+        padding: 10px;
+    }
+
+    .price {
+        font-size: 0.9em;  /* Reduce font size for mobile */
+    }
+
+    .time {
+        font-size: 1.1em;  /* Adjust font size for mobile */
+    }
+
+    .location {
+        font-size: 0.9em;  /* Reduce font size for mobile */
+    }
+
+    .duration p {
+        font-size: 1em;  /* Adjust duration text size for mobile */
+    }
+    
+    }

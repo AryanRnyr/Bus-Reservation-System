@@ -1,0 +1,118 @@
+.header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header .logo {
+    width: 150px;
+}
+
+.header h2 {
+    color: #048fc6;
+    font-size: 44px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header .contact {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.journey-details {
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
+    /* border: 1px solid yellow; */
+    background-color: #ebebeb;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.journey-details h3 {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(58, 58, 58);
+    /* color: #048fc6; */
+}
+
+.journey-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Hide elements like the button during printing */
+@media print {
+    .listtop {
+    display: none;
+    }
+
+    .hide-column {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .journey-details{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 1px solid #eabf15;
+        border-bottom: 1px solid #eabf15;
+        /* border: 1px solid yellow; */
+        background-color: #fcfce1;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+    
+    body {
+        /* font-family: Arial, sans-serif; */
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        box-sizing: border-box; /* Ensures padding and borders are included */
+    }
+    
+    
+    @page {
+        margin: 7mm; /* Remove default page margin */
+        size: A4; /* Adjust page size if necessary */
+        box-sizing: border-box;
+    }
+    
+     /* Prevent any scaling issues */
+     html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .table{
+        width: 90%;
+    }
+    }
+    

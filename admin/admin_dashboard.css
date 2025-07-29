@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        grid-template-columns: 1fr; /* 1 item per row */
+    }
+}
+body{
+    background-color: rgb(236, 236, 236);
+}

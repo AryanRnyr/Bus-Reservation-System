@@ -1,0 +1,48 @@
+Step 1: Deleted rows: 1
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 7
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 0
+Error: No rows deleted from seat_reservation. Cancellation failed.
+Step 1: Deleted rows: 0
+Error: No rows deleted from seat_reservation. Cancellation failed.
+Step 1: Deleted rows: 0
+Error: No rows deleted from seat_reservation. Cancellation failed.
+Step 1: Deleted rows: 0
+Error: No rows deleted from seat_reservation. Cancellation failed.
+Step 1: Deleted rows: 0
+Error: No rows deleted from seat_reservation. Cancellation failed.
+Step 1: Deleted rows: 0
+Error: No rows deleted from seat_reservation. Cancellation failed.
+Step 1: Deleted rows: 0
+Error: No rows deleted from seat_reservation. Cancellation failed.
+Step 1: Deleted rows: 3
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 4
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 4
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 4
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 5
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 1
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 5
+Step 5: Transaction committed successfully.
+Step 1: Deleted rows: 2
+Step 5: Transaction committed successfully.

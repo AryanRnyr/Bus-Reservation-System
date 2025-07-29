@@ -1,0 +1,6 @@
+input[type="text"], input[type="number"], #bus_id, #from_location, #to_location, #departure_time, #eta, #status  {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

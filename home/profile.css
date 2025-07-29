@@ -1,0 +1,246 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    overflow-x: auto;  /* Enable horizontal scrolling if content exceeds width */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .linklogo {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #2379e9;
+}
+
+.linklogo {
+    float: left;
+    padding: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.logo{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #ddd;
+}
+
+.navbar li:nth-child(1), 
+.navbar li:nth-child(2) {
+  margin-right: 10px;   /* Space between the first two items */
+}
+
+.profile-btn {
+    background: #ffc162;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.logout-btn{
+    background: #ffc162;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+/* profille styling */
+body.loggedin {
+    background-color: #f3f4f7;
+}
+.content {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.content h2 {
+    margin: auto;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #4a536e;
+    text-align: center;
+}
+
+.content > p, .content > div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.content > p table td, .content > div table td {
+    padding: 5px;
+}
+
+.content > p table td:first-child, .content > div table td:first-child {
+    font-weight: bold;
+    color: #4a536e;
+    padding-right: 15px;
+}
+
+.content > div p {
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+.img-circle{
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+table{
+    margin-left: 20%;
+}
+
+/* tab */
+.tab{
+    box-sizing: border-box;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* .tab button:active{
+    background-color: #ccc;
+} */
+
+.tab button{
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tablinks-active{
+    background-color: #ccc;
+}
+
+/* General Hamburger Styles */
+.hamburger {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    position: absolute; /* Position it for better placement */
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100; /* Ensure it's above other elements */
+}
+/* Mobile specific styles */
+@media (max-width: 768px) {
+    /* Navbar - stack items */
+    .hamburger {
+        display: block; /* Make it visible */
+    }
+
+    .nav-links {
+        display: none; /* Initially hide the nav links */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+        flex-direction: column;
+        background-color: #f8f8f8; /* Optional: Add a background for better visibility */
+        position: absolute;
+        top: 3.5rem; /* Adjust based on the hamburger button position */
+        right: 0;
+        width: 100%; /* Take full width */
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Profile & logout buttons in a single row on mobile */
+    .profile-btn, .logout-btn {
+        display: inline-block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Content - Stack the content */
+    .content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* Table adjustments */
+    table {
+        margin: 0;
+        width: 80%;
+        max-width: 100%;
+        table-layout: fixed;
+        font-size: 14px;
+    }
+
+    table td{
+        margin: 0;
+        width: 100%;
+        max-width: max-content;
+        table-layout: fixed;
+    }
+
+    .tab button {
+        width: 100%; /* Make tabs full-width on mobile */
+        font-size: 16px;
+    }
+
+    .tab button:hover {
+        background-color: #f0f0f0;
+    }
+
+    
+}
