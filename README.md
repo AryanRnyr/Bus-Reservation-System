@@ -120,10 +120,9 @@ This project is strictly for **experience and idea reference only**.
 
 ## 👨‍💻 Author
 
-**Aryan**  
+**Aryan Rauniyar**  
 Bachelor in Computer Applications (BCA)  
-National College (NIST)  
-Founder – RN Bus Yatayat Pvt. Ltd.
+National College (NIST)
 
 ---
 
